@@ -1,0 +1,13 @@
+body {
+  --background: #191724;
+  --primary: #26233a;
+  --text: white;
+  --text-inverse: white;
+}
+
+body {
+  --border-radius: 15px;
+  --border-radius-circle: 100%;
+  background: var(--background);
+  color: var(--text);
+}
