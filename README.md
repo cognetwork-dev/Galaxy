@@ -4,7 +4,7 @@ Nebula is an official flagship service of Nebula Services and Nebula Developer L
 ## Features
 - Stunning and highly functional interface
 - Hides your IP from sites
-- _limited_ mobile support
+- *limited* mobile support
 - Stealth Mode (buffed `about:blank` cloaking)
 - Clickoff cloaking
 

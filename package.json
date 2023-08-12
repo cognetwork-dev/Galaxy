@@ -1,0 +1,33 @@
+{
+  "name": "nebula",
+  "version": "8.0.0",
+  "description": "A stunning a sleek web proxy with support for hundreds of popular sites.",
+  "main": "index.js",
+  "repository": "https://github.com/NebulaServices/Nebula.git",
+  "type": "module",
+  "author": "Nebula Services (Nebelung)",
+  "license": "AGPL-3.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && node build.mjs",
+    "start": "node start.mjs"
+  },
+  "eslintConfig": {
+      "extends": [
+          "react-app",
+          "react-app/jest"
+      ]
+  },
+  "browserslist": {
+      "production": [
+          ">0.2%",
+          "not dead",
+          "not op_mini all"
+      ],
+      "development": [
+          "last 1 chrome version",
+          "last 1 firefox version",
+          "last 1 safari version"
+      ]
+  }
+}
