@@ -10,4 +10,5 @@ body {
   --border-radius-circle: 100%;
   background: var(--background);
   color: var(--text);
+  font-size: 1rem;
 }

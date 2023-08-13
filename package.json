@@ -7,22 +7,18 @@
   "author": "Nebula Services (Nebelung)",
   "license": "AGPL-3.0",
   "scripts": {
-    "dev": "solid-start dev",
-    "build": "solid-start build",
-    "start": "solid-start start"
+    "start": "node start.mjs",
+    "dev": "vite",
+    "build": "vite build"
   },
   "devDependencies": {
-    "@types/node": "^18.16.19",
-    "esbuild": "^0.14.54",
-    "postcss": "^8.4.26",
-    "solid-start-node": "^0.3.0",
-    "typescript": "^4.9.5"
+    "solid-devtools": "^0.27.3",
+    "vite": "^4.3.9",
+    "vite-plugin-solid": "^2.7.0"
   },
   "dependencies": {
-    "@solidjs/meta": "^0.28.5",
-    "@solidjs/router": "^0.8.2",
-    "solid-js": "^1.7.11",
-    "solid-start": "^0.3.2"
+    "@solidjs/router": "^0.8.3",
+    "solid-js": "^1.7.6"
   },
   "engines": {
     "node": ">=18"
