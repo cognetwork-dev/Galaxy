@@ -13,22 +13,22 @@ function Nav() {
             <img src={logo} alt="Nebula logo" draggable="false" class="logo" />
         </A>
         <div class="navItems">
-            <div class="navItem">
+            <a href="https://discord.gg/unblocker" class="navItem">
                 <SiDiscord fill="var(--text-inverse)" />
-            </div>
-            <div class="navItem">
+            </a>
+            <a href="https://github.com/NebulaServices/Nebula" class="navItem">
                 <AiOutlineGithub fill="var(--text-inverse)" />
-            </div>
+            </a>
             <div class="navItem">
                 <IoGameController fill="var(--text-inverse)" />
             </div>
-            <div class="navItem">
+            <A href="/options" class="navItem">
                 <IoOptions fill="var(--text-inverse)" />
-            </div>
+            </A>
         </div>
       </div>
     </>
   );
 }
 
-export default Nav
+export default Nav;

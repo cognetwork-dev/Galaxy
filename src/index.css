@@ -66,6 +66,14 @@ body {
   user-select: none;
 }
 
+.omnibox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: calc(100% - 2rem);
+}
+
 .search {
   border-radius: var(--border-radius);
   background: var(--primary);
@@ -74,10 +82,22 @@ body {
   height: 50px;
   outline: none;
   font-family: roboto;
-  font-size: 20px;
+  font-size: large;
   border: none;
   padding: 0 1rem;
-  max-width: calc(100% - 4rem);
+  max-width: 100%;
+  padding-left: calc(1rem + 20px + 5px);
+}
+
+.searchIcon {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+
+.searchIcon svg {
+  height: 20px;
+  width: 20px;
 }
 
 .navItems {
@@ -101,4 +121,50 @@ body {
 .navItem svg {
   height: 20px;
   width: 20px;
+}
+
+.footer {
+  width: -webkit-fill-available;
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  padding-top: 0;
+}
+
+.footerItem {
+  font-size: 13px;
+  user-select: none;
+}
+
+.footerItemRight {
+  margin-left: auto;
+}
+
+.link {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.errorTitle {
+  margin-top: calc(60px + 1rem);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  user-select: none;
+}
+
+.errorText {
+  text-align: center;
+  margin-top: 0.5rem;
+  user-select: none;
 }

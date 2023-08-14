@@ -4,7 +4,10 @@ import { Router, Route, Routes } from "@solidjs/router";
 
 import './index.css';
 import App from './app';
+import Options from './options';
+import Error from './error';
 import Nav from './components/nav';
+import Footer from './components/footer';
 
 const root = document.getElementById('root');
 
@@ -21,7 +24,10 @@ render(
         <Nav />
         <Routes>
           <Route path="/" component={App} />
+          <Route path="/options" component={Options} />
+          <Route path="*" component={Error} />
         </Routes>
+        <Footer />
       </Router>
     </>
   ),
