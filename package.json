@@ -23,7 +23,8 @@
     "serve-static": "^1.15.0",
     "solid-icons": "^1.0.11",
     "solid-js": "^1.7.6",
-    "vite-plugin-minify": "^1.5.2"
+    "vite-plugin-minify": "^1.5.2",
+    "vite-plugin-solid-svg": "^0.6.4"
   },
   "engines": {
     "node": ">=18"

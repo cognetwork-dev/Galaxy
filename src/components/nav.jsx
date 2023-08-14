@@ -1,4 +1,4 @@
-import logo from '../assets/logo.png';
+import Logo from '../assets/logo.svg';
 import { A } from "@solidjs/router";
 import { IoOptions } from 'solid-icons/io';
 import { IoGameController } from 'solid-icons/io';
@@ -13,8 +13,8 @@ function Nav() {
   return (
     <>
       <div class="nav">
-        <A href="/">
-            <img src={logo} alt="Nebula logo" draggable="false" class="logo" />
+        <A href="/" class="logo">
+            <Logo />
         </A>
         <div class="navItems">
             <a href="https://discord.gg/unblocker" class="navItem">

@@ -37,12 +37,10 @@ body {
   height: 60px;
   width: 60px;
   cursor: pointer;
-  transition: transform 1s ease-in-out;
   user-select: none;
-}
-
-.logo:hover {
-  transform: rotate(360deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .home {
