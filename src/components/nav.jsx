@@ -6,6 +6,10 @@ import { SiDiscord } from 'solid-icons/si';
 import { AiOutlineGithub } from 'solid-icons/ai';
 
 function Nav() {
+  function gamesGo() {
+    window.navigate("https://radon.games/games")
+  }
+
   return (
     <>
       <div class="nav">
@@ -19,7 +23,7 @@ function Nav() {
             <a href="https://github.com/NebulaServices/Nebula" class="navItem">
                 <AiOutlineGithub fill="var(--text-inverse)" />
             </a>
-            <div class="navItem">
+            <div onclick={gamesGo} class="navItem">
                 <IoGameController fill="var(--text-inverse)" />
             </div>
             <A href="/options" class="navItem">

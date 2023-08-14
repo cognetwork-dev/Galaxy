@@ -19,8 +19,10 @@
   "dependencies": {
     "@solidjs/meta": "^0.28.6",
     "@solidjs/router": "^0.8.3",
+    "@tomphttp/bare-server-node": "^2.0.1",
     "solid-icons": "^1.0.11",
-    "solid-js": "^1.7.6"
+    "solid-js": "^1.7.6",
+    "vite-plugin-minify": "^1.5.2"
   },
   "engines": {
     "node": ">=18"

@@ -1,11 +1,10 @@
-
 # Nebula
 Nebula is an official flagship service of Nebula Services and Nebula Developer Labs. A stunning and sleek web proxy with support for hundreds of popular sites. With Nebula, the sky is the limit.
 
 ## Features
 - Stunning and highly functional interface
 - Hides your IP from sites
-- *limited* mobile support
+- Mobile support
 - Stealth Mode (buffed `about:blank` cloaking)
 - Clickoff cloaking
 
