@@ -4,6 +4,8 @@ import { Router, Route, Routes } from "@solidjs/router";
 import './index.css';
 import App from './app';
 import Options from './options';
+import Contributers from './contributers';
+import Privacy from './privacy';
 import Error from './error';
 import Nav from './components/nav';
 import Footer from './components/footer';
@@ -26,6 +28,8 @@ render(
         <Routes>
           <Route path="/" component={App} />
           <Route path="/options" component={Options} />
+          <Route path="/contributers" component={Contributers} />
+          <Route path="/privacy" component={Privacy} />
           <Route path="*" component={Error} />
         </Routes>
         <Footer />
