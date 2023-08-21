@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-body {
-  --background: #191724;
-  --primary: #26233a;
-  --text: white;
-  --text-inverse: white;
-  --font: "Roboto";
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url('./themes.css');
 
 body {
   --border-radius: 15px;
@@ -19,12 +14,13 @@ body {
   padding: 0;
 }
 
-::-webkit-scrollbar-thumb {
-  background: var(--primary);
-}
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
   background: transparent;
   width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--primary);
 }
 
 .nav {
@@ -251,4 +247,63 @@ body {
   margin: 0 1rem;
   margin-top: calc(60px + 1rem);
   margin-bottom: 25px;
+}
+
+.optionTitle {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--text-inverse);
+}
+
+.optionText {
+  text-align: center;
+  color: var(--text-inverse);
+}
+
+.solid-select-single-value {
+  color: var(--text);
+}
+
+.solid-select-option {
+  color: var(--text);
+  background: transparent !important;
+  padding-left: 0;
+  cursor: pointer !important;
+}
+
+.solid-select-container {
+  background: var(--background);
+  border-radius: var(--border-radius);
+  padding: 0.25rem 0.5rem;
+  margin: 0.5rem 0;
+  cursor: pointer !important;
+}
+
+.solid-select-list {
+  border-radius: var(--border-radius) !important;
+  box-shadow: none;
+  top: 2.75rem;
+  left: 0;
+}
+
+.solid-select-input {
+  cursor: pointer !important;
+}
+
+.solid-select-list::-webkit-scrollbar {
+  background: transparent;
+  width: 16px;
+}
+
+.solid-select-list::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  background-clip: content-box;
+  border: 4px solid transparent;
+  border-radius: 12px;
+}
+
+.solid-select-list::-webkit-scrollbar-track {
+  margin: 4px 0;
 }

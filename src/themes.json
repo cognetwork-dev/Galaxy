@@ -1,0 +1,19 @@
+[
+    {"name": "Default", "theme": "default"},
+    {"name": "Light", "theme": "light"},
+    {"name": "Suit", "theme": "suit"},
+    {"name": "Dante", "theme": "dante"},
+    {"name": "Blizzard", "theme": "blizzard"},
+    {"name": "Metallic", "theme": "metallic"},
+    {"name": "Swamp", "theme": "swamp"},
+    {"name": "Nord", "theme": "nord"},
+    {"name": "Connection", "theme": "connection"},
+    {"name": "Dune", "theme": "dune"},
+    {"name": "VS Code", "theme": "vscode"},
+    {"name": "Fracital", "theme": "fracital"},
+    {"name": "Baja Blast", "theme": "baja-blast"},
+    {"name": "Hacker", "theme": "hacker"},
+    {"name": "Pod", "theme": "pod"},
+    {"name": "3kh0", "theme": "echo"},
+    {"name": "Nebelung", "theme": "nebelung"}
+]

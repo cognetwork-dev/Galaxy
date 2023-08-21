@@ -1,7 +1,7 @@
 import { render } from 'solid-js/web';
 import { Router, Route, Routes } from "@solidjs/router";
 
-import './index.css';
+import './css/index.css';
 import App from './app';
 import Options from './options';
 import Contributers from './contributers';
@@ -9,6 +9,7 @@ import Privacy from './privacy';
 import Error from './error';
 import Nav from './components/nav';
 import Footer from './components/footer';
+import Proxy from './components/proxy';
 
 import "./proxy";
 
@@ -33,6 +34,7 @@ render(
           <Route path="*" component={Error} />
         </Routes>
         <Footer />
+        <Proxy />
       </Router>
     </>
   ),
