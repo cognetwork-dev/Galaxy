@@ -307,3 +307,21 @@ body::-webkit-scrollbar-thumb {
 .solid-select-list::-webkit-scrollbar-track {
   margin: 4px 0;
 }
+
+.optionButton {
+  background: var(--background);
+  border-radius: var(--border-radius);
+  padding: 0.25rem 0.5rem;
+  margin: 0.5rem 0;
+  height: calc(32px + 0.5rem);
+  display: flex;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  padding-left: 1rem;
+  font-size: 1rem;
+  color: var(--text);
+  outline: none;
+  border: none;
+  width: -webkit-fill-available;
+}
