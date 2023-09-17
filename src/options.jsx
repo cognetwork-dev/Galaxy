@@ -1,12 +1,14 @@
 import Head from "./components/head";
 import { createEffect, createSignal } from "solid-js";
-import { useLocalTheme } from './settings';
+import { useLocalTheme, useLocalTitle, useLocalIcon } from './settings';
 import themes from "./themes.json";
 import { Select } from "@thisbeyond/solid-select";
 import "@thisbeyond/solid-select/style.css";
 
 function Options() {  
-  var [ localTheme, setLocalTheme ] = useLocalTheme();
+  var [localTheme, setLocalTheme] = useLocalTheme();
+  const [localTitle, setLocalTitle] = useLocalTitle();
+  const [localIcon, setLocalIcon] = useLocalIcon();
 
   var format = (item, type) => (item.name);
 
@@ -24,6 +26,16 @@ function Options() {
     win.window.aboutBlank = true
     win.document.write(`<iframe style="height:100%; width: 100%; border: none; position: fixed; top: 0; right: 0; left: 0; bottom: 0; background: ${getComputedStyle(document.body).getPropertyValue("--background").trim()}" sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-same-origin allow-scripts allow-top-navigation allow-top-navigation-by-user-activation" src="${window.location.href}"></iframe>`)
   }
+
+  const updateTitle = (e) => {
+    setLocalTitle(e.target.value)
+    document.title = e.target.value || "Options | Nebula"
+  }
+
+  const updateIcon = (e) => {
+    setLocalIcon(e.target.value)
+    document.querySelector("link[rel='icon']").href = e.target.value || "/logo.png"
+  }
   
   return (
     <>
@@ -37,6 +49,8 @@ function Options() {
             <div class="option">
               <div class="optionTitle">Tab Mask</div>
               <div class="optionText">Disguise your tab to your liking!</div>
+              <input class="optionInput" placeholder="Title" onKeyUp={updateTitle} value={localTitle} />
+              <input class="optionInput" placeholder="Favicon" onKeyUp={updateIcon} value={localIcon} />
             </div>
             <div class="option">
               <div class="optionTitle">Proxy</div>

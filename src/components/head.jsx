@@ -1,10 +1,13 @@
 import { MetaProvider, Title, Link } from '@solidjs/meta';
 import { createEffect } from "solid-js";
-import { useLocalTheme } from '../settings';
+import { useLocalTheme, useLocalTitle, useLocalIcon } from '../settings';
 
 function Head({defaultTitle}) {
-    var title = defaultTitle ? defaultTitle + " | Nebula" : "Nebula"
-    var icon = "/logo.png"
+    const [localTitle, setLocalTitle] = useLocalTitle();
+    const [localIcon, setLocalIcon] = useLocalIcon();
+
+    var title = localTitle ? localTitle : (defaultTitle ? defaultTitle + " | Nebula" : "Nebula")
+    var icon = localIcon ? localIcon : "/logo.png"
 
     var [ localTheme, setLocalTheme ] = useLocalTheme();
 

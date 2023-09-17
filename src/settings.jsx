@@ -6,3 +6,5 @@ const useLocalFallback = (key, fallback) => {
 };
 
 export var useLocalTheme = () => useLocalFallback("theme", "default");
+export var useLocalTitle = () => useLocalStorage("title");
+export var useLocalIcon = () => useLocalStorage("icon");

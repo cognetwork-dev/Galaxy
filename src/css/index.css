@@ -325,3 +325,19 @@ body::-webkit-scrollbar-thumb {
   border: none;
   width: -webkit-fill-available;
 }
+
+.optionInput {
+  background: var(--background);
+  border-radius: var(--border-radius);
+  padding: 0.25rem 1rem;
+  margin: 0.5rem 0;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  font-size: 1rem;
+  color: var(--text);
+  outline: none;
+  border: none;
+  width: -webkit-fill-available;
+}
