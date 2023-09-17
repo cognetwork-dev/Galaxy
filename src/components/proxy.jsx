@@ -5,7 +5,6 @@ function Proxy() {
     const [currentURL, setCurrentURL] = createSignal("");
 
     function getURL(url) {
-      //return window.location.origin + __uv$config.prefix + __uv$config.encodeUrl(url)
       return window.location.origin + __dynamic$config.prefix + "route?url=" + url
     }
   

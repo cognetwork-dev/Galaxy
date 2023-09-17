@@ -52,16 +52,12 @@ function Options() {
               <input class="optionInput" placeholder="Title" onKeyUp={updateTitle} value={localTitle} />
               <input class="optionInput" placeholder="Favicon" onKeyUp={updateIcon} value={localIcon} />
             </div>
-            <div class="option">
-              <div class="optionTitle">Proxy</div>
-              <div class="optionText">Choose your favorite proxy!</div>
-            </div>
             {!isAboutBlank() ? (
-            <div class="option">
-              <div class="optionTitle">About Blank</div>
-              <div class="optionText">Open Nebula in a about:blank!</div>
-              <button class="optionButton" onclick={openAboutBlank}>Open</button>
-            </div>
+              <div class="option">
+                <div class="optionTitle">About Blank</div>
+                <div class="optionText">Open Nebula in a about:blank!</div>
+                <button class="optionButton" onclick={openAboutBlank}>Open</button>
+              </div>
             ) : ""}
             <div class="option">
               <div class="optionTitle">Clickoff Cloaking</div>
