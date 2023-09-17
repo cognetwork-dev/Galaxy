@@ -23,6 +23,11 @@ body::-webkit-scrollbar-thumb {
   background: var(--primary);
 }
 
+::placeholder {
+  color: var(--text);
+  opacity: 0.5;
+}
+
 .nav {
   background: var(--background);
   width: 100%;
@@ -340,4 +345,39 @@ body::-webkit-scrollbar-thumb {
   outline: none;
   border: none;
   width: -webkit-fill-available;
+}
+
+.toggle {
+  background: var(--background);
+  border-radius: 100px;
+  padding: 0.25rem 1rem;
+  margin: 0.5rem auto;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--text);
+  width: 3rem;
+  position: relative;
+}
+
+.toggleInside {
+  background: var(--primary);
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 100px;
+  left: 10px;
+  pointer-events: none;
+  opacity: 0.5;
+  transition: height 80ms ease-out, width 80ms ease-out, transform 80ms ease-out, opacity 80ms ease-out;
+}
+
+.toggle[on=true] .toggleInside {
+  width: 28px;
+  height: 28px;
+  opacity: 1;
+  transform: translateX(calc(100% + 8px));
 }

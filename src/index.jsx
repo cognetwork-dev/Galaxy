@@ -21,6 +21,23 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
   );
 }
 
+var oldTitle = ""
+var oldIcon = ""
+
+document.addEventListener("visibilitychange", () => {
+  if (localStorage.getItem("clickoff") == "true") {
+    if (document.visibilityState == "hidden") {
+      oldTitle = document.title
+      oldIcon = document.querySelector("link[rel='icon']").href
+      document.title = "\u2800"
+      document.querySelector("link[rel='icon']").href = "data:image/svg+xml;base64,"
+    } else {
+      document.title = oldTitle
+      document.querySelector("link[rel='icon']").href = oldIcon
+    }
+  }
+})
+
 render(
   () => (
     <>

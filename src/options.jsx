@@ -1,14 +1,17 @@
 import Head from "./components/head";
 import { createEffect, createSignal } from "solid-js";
-import { useLocalTheme, useLocalTitle, useLocalIcon } from './settings';
+import { useLocalTheme, useLocalTitle, useLocalIcon, useLocalClickoff } from './settings';
 import themes from "./themes.json";
 import { Select } from "@thisbeyond/solid-select";
 import "@thisbeyond/solid-select/style.css";
 
-function Options() {  
+function Options() {
+  //Nebelung did the code
+
   var [localTheme, setLocalTheme] = useLocalTheme();
   const [localTitle, setLocalTitle] = useLocalTitle();
   const [localIcon, setLocalIcon] = useLocalIcon();
+  const [localClickoff, setLocalClickoff] = useLocalClickoff();
 
   var format = (item, type) => (item.name);
 
@@ -36,7 +39,19 @@ function Options() {
     setLocalIcon(e.target.value)
     document.querySelector("link[rel='icon']").href = e.target.value || "/logo.png"
   }
-  
+
+  const toggleClickoff = (e) => {
+    if (e.target.getAttribute("on") == "false") {
+      e.target.setAttribute("on", "true")
+    } else if (e.target.getAttribute("on") == "true") {
+      e.target.setAttribute("on", "false")
+    } else {
+      e.target.setAttribute("on", "true")
+    }
+
+    setLocalClickoff(e.target.getAttribute("on"))
+  }
+
   return (
     <>
         <Head defaultTitle="Options" />
@@ -62,6 +77,15 @@ function Options() {
             <div class="option">
               <div class="optionTitle">Clickoff Cloaking</div>
               <div class="optionText">Disguise your tab on clickoff!</div>
+              {localClickoff == "true" ? (
+              <div class="toggle" onclick={toggleClickoff} on="true">
+                <div class="toggleInside"></div>
+              </div>
+              ) : (
+              <div class="toggle" onclick={toggleClickoff} on="false">
+                <div class="toggleInside"></div>
+              </div>
+              )}
             </div>
         </div>
     </>
