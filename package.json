@@ -1,10 +1,10 @@
 {
-  "name": "nebula",
+  "name": "galaxy",
   "version": "8.0.0",
   "description": "A stunning a sleek web proxy with support for hundreds of popular sites.",
-  "repository": "https://github.com/NebulaServices/Nebula.git",
+  "repository": "https://github.com/cognetwork-dev/Galaxy.git",
   "type": "module",
-  "author": "Nebula Services (Nebelung)",
+  "author": "Nebelung",
   "license": "AGPL-3.0",
   "scripts": {
     "start": "node start.mjs",

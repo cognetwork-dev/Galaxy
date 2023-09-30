@@ -20,7 +20,7 @@ function Nav() {
             <a href="https://discord.gg/unblocker" class="navItem">
                 <SiDiscord fill="var(--text-inverse)" />
             </a>
-            <a href="https://github.com/NebulaServices/Nebula" class="navItem">
+            <a href="https://github.com/cognetwork-dev/Galaxy" class="navItem">
                 <AiOutlineGithub fill="var(--text-inverse)" />
             </a>
             <div onclick={gamesGo} class="navItem">

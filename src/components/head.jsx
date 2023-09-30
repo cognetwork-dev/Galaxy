@@ -6,7 +6,7 @@ function Head({defaultTitle}) {
     const [localTitle, setLocalTitle] = useLocalTitle();
     const [localIcon, setLocalIcon] = useLocalIcon();
 
-    var title = localTitle ? localTitle : (defaultTitle ? defaultTitle + " | Nebula" : "Nebula")
+    var title = localTitle ? localTitle : (defaultTitle ? defaultTitle + " | Galaxy" : "Galaxy")
     var icon = localIcon ? localIcon : "/logo.png"
 
     var [ localTheme, setLocalTheme ] = useLocalTheme();

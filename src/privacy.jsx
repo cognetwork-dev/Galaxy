@@ -7,7 +7,7 @@ function Privacy() {
         <div class="privacy">
             <h2>Privacy Policy</h2>
             <p>
-            Your privacy is important to us. It is Nebula Services&#39; policy to
+            Your privacy is important to us. It is Cog Network&#39; policy to
             respect your privacy and comply with any applicable law and regulation
             regarding any personal information we may collect about you, including
             across our website, <a href={window.location.origin}>{window.location.origin}</a>,
