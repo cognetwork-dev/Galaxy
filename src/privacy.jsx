@@ -90,11 +90,10 @@ function Privacy() {
             using the following details:
             </p>
             <p>
-            Chloe B<br/>
-            <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d1b2b9bdbeb491bfb4b3a4bdb0ffb3b8be">[email&#160;protected]</a>
+            Nebelung<br/>
+            <a href="mailto:nebelung@mailfence.com">nebelung@mailfence.com</a>
             </p>
         </div>
-        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854" integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==" data-cf-beacon='{"rayId":"7f7cb05c9cacc375","version":"2023.8.0","r":1,"token":"fcb30056190f498eb555455a8d6c69b9","si":100}' crossorigin="anonymous"></script>
     </>
   );
 }
