@@ -12,7 +12,7 @@
 </p>
 
 ## About
-Galaxy was originally made for version 8 for Nebula but was adapted into it's own project. 
+Galaxy was originally made for version 8 for Nebula but was adapted into its own project. 
 
 ## Features
 - Stunning design
