@@ -11,6 +11,9 @@
 <a href="https://app.koyeb.com/deploy?type=git&repository=github.com/cognetwork-dev/Galaxy&branch=main&name=Galaxy"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/koyeb2.svg"><img></a>
 </p>
 
+## About
+Galaxy was originally made for version 8 for Nebula but was adapted into it's own project. 
+
 ## Features
 - Stunning design
 - Support many popular sites

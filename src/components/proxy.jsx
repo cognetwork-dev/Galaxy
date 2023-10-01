@@ -5,7 +5,7 @@ function Proxy() {
     const [currentURL, setCurrentURL] = createSignal("");
 
     function getURL(url) {
-      return window.location.origin + __dynamic$config.prefix + "route?url=" + url
+      return window.location.origin + __uv$config.prefix + __uv$config.encodeUrl(url);
     }
   
     function navigate(url) {
@@ -13,7 +13,7 @@ function Proxy() {
     }
 
     function closeWeb() {
-        setCurrentURL("")
+      setCurrentURL("")
     }
 
     window.navigate = navigate
