@@ -17,7 +17,7 @@ function Nav() {
             <Logo />
         </A>
         <div class="navItems">
-            <a href="https://discord.gg/unblocker" class="navItem">
+            <a href="https://discord.com/invite/yk33HZSZkU" class="navItem">
                 <SiDiscord fill="var(--text-inverse)" />
             </a>
             <a href="https://github.com/cognetwork-dev/Galaxy" class="navItem">
