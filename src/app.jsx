@@ -15,7 +15,7 @@ function App() {
     <>
       <Head />
       <div class="home">
-        <div class="title">Galaxy</div>
+        <div class="title">Mavs Prox</div>
         <div class="omnibox">
           <div class="searchIcon">
             <IoSearch fill="var(--text-inverse)" />
