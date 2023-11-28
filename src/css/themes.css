@@ -1,6 +1,6 @@
 body[data-theme="default"] {
   --background: #red;
-  --primary: #white;
+  --primary: #red;
   --text: black;
   --text-inverse: black;
   --font: "Roboto";
