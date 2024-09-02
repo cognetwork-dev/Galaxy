@@ -2,21 +2,19 @@ import { createSignal } from "solid-js";
 import { IoCloseSharp } from 'solid-icons/io'
 
 function Proxy() {
-    const [currentURL, setCurrentURL] = createSignal("");
+  const [currentURL, setCurrentURL] = createSignal("");
 
-    function getURL(url) {
-      return window.location.origin + __uv$config.prefix + __uv$config.encodeUrl(url);
-    }
-  
-    function navigate(url) {
-      setCurrentURL(getURL(url))
-    }
+  async function navigate(url) {
+    setCurrentURL(await window.chemical.encode(url, {
+      autoHttps: true
+    }))
+  }
 
-    function closeWeb() {
-      setCurrentURL("")
-    }
+  function closeWeb() {
+    setCurrentURL("")
+  }
 
-    window.navigate = navigate
+  window.navigate = navigate
   return (
     <>
       <iframe src={currentURL()} data-open={currentURL() ? "true" : "false"} class="web"></iframe>

@@ -11,8 +11,6 @@ import Nav from './components/nav';
 import Footer from './components/footer';
 import Proxy from './components/proxy';
 
-import "./proxy";
-
 const root = document.getElementById('root');
 
 if (import.meta.env.DEV && !(root instanceof HTMLElement)) {

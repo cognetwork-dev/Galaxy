@@ -34,4 +34,4 @@ Run `npm run dev` to run the app in development mode.
 ### Deploy
 Click a button at the top of this page and follow the directions for an easy way to host Galaxy.
 
-100% made by [Nebelung!](https://github.com/Nebelung-Dev)
+Made by [Nebelung!](https://github.com/Nebelung-Dev)

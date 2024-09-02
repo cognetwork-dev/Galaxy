@@ -23,7 +23,6 @@ function App() {
           <input onkeyup={searchType} autofocus class="search" />
         </div>
       </div>
-      {/*👋 - Nebelung*/}
     </>
   );
 }
