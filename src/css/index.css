@@ -268,52 +268,6 @@ body::-webkit-scrollbar-thumb {
   color: var(--text-inverse);
 }
 
-.solid-select-single-value {
-  color: var(--text);
-}
-
-.solid-select-option {
-  color: var(--text);
-  background: transparent !important;
-  padding-left: 0;
-  cursor: pointer !important;
-}
-
-.solid-select-container {
-  background: var(--background);
-  border-radius: var(--border-radius);
-  padding: 0.25rem 0.5rem;
-  margin: 0.5rem 0;
-  cursor: pointer !important;
-}
-
-.solid-select-list {
-  border-radius: var(--border-radius) !important;
-  box-shadow: none;
-  top: 2.75rem;
-  left: 0;
-}
-
-.solid-select-input {
-  cursor: pointer !important;
-}
-
-.solid-select-list::-webkit-scrollbar {
-  background: transparent;
-  width: 16px;
-}
-
-.solid-select-list::-webkit-scrollbar-thumb {
-  background: var(--primary);
-  background-clip: content-box;
-  border: 4px solid transparent;
-  border-radius: 12px;
-}
-
-.solid-select-list::-webkit-scrollbar-track {
-  margin: 4px 0;
-}
-
 .optionButton {
   background: var(--background);
   border-radius: var(--border-radius);
@@ -324,7 +278,6 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   user-select: none;
   cursor: pointer;
-  padding-left: 1rem;
   font-size: 1rem;
   color: var(--text);
   outline: none;

@@ -4,10 +4,9 @@ import { useLocalTheme, useLocalTitle, useLocalIcon, useLocalClickoff } from './
 import themes from "./themes.json";
 import { Select } from "@thisbeyond/solid-select";
 import "@thisbeyond/solid-select/style.css";
+import "./css/select.css"
 
 function Options() {
-  //Nebelung did the code
-
   var [localTheme, setLocalTheme] = useLocalTheme();
   const [localTitle, setLocalTitle] = useLocalTitle();
   const [localIcon, setLocalIcon] = useLocalIcon();
@@ -54,40 +53,40 @@ function Options() {
 
   return (
     <>
-        <Head defaultTitle="Options" />
-        <div class="options">
-            <div class="option">
-              <div class="optionTitle">Theme</div>
-              <div class="optionText">Make Galaxy your own!</div>
-              <Select initialValue={theme()} options={themes} format={format} onChange={setTheme} />
-            </div>
-            <div class="option">
-              <div class="optionTitle">Tab Mask</div>
-              <div class="optionText">Disguise your tab to your liking!</div>
-              <input class="optionInput" placeholder="Title" onKeyUp={updateTitle} value={localTitle} />
-              <input class="optionInput" placeholder="Favicon" onKeyUp={updateIcon} value={localIcon} />
-            </div>
-            {!isAboutBlank() ? (
-              <div class="option">
-                <div class="optionTitle">About Blank</div>
-                <div class="optionText">Open Galaxy in a about:blank!</div>
-                <button class="optionButton" onclick={openAboutBlank}>Open</button>
-              </div>
-            ) : ""}
-            <div class="option">
-              <div class="optionTitle">Clickoff Cloaking</div>
-              <div class="optionText">Disguise your tab on clickoff!</div>
-              {localClickoff == "true" ? (
-              <div class="toggle" onclick={toggleClickoff} on="true">
-                <div class="toggleInside"></div>
-              </div>
-              ) : (
-              <div class="toggle" onclick={toggleClickoff} on="false">
-                <div class="toggleInside"></div>
-              </div>
-              )}
-            </div>
+      <Head defaultTitle="Options" />
+      <div class="options">
+        <div class="option">
+          <div class="optionTitle">Theme</div>
+          <div class="optionText">Make Galaxy your own!</div>
+          <Select initialValue={theme()} options={themes} format={format} onChange={setTheme} />
         </div>
+        <div class="option">
+          <div class="optionTitle">Tab Mask</div>
+          <div class="optionText">Disguise your tab to your liking!</div>
+          <input class="optionInput" placeholder="Title" onKeyUp={updateTitle} value={localTitle} />
+          <input class="optionInput" placeholder="Favicon" onKeyUp={updateIcon} value={localIcon} />
+        </div>
+        {!isAboutBlank() ? (
+          <div class="option">
+            <div class="optionTitle">About Blank</div>
+            <div class="optionText">Open Galaxy in a about:blank!</div>
+            <button class="optionButton" onclick={openAboutBlank}>Open</button>
+          </div>
+        ) : ""}
+        <div class="option">
+          <div class="optionTitle">Clickoff Cloaking</div>
+          <div class="optionText">Disguise your tab on clickoff!</div>
+          {localClickoff == "true" ? (
+            <div class="toggle" onclick={toggleClickoff} on="true">
+              <div class="toggleInside"></div>
+            </div>
+          ) : (
+            <div class="toggle" onclick={toggleClickoff} on="false">
+              <div class="toggleInside"></div>
+            </div>
+          )}
+        </div>
+      </div>
     </>
   );
 }

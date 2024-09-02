@@ -1,5 +1,5 @@
 import { render } from 'solid-js/web';
-import { Router, Route, Routes } from "@solidjs/router";
+import { Router, Route } from "@solidjs/router";
 
 import './css/index.css';
 import App from './app';
@@ -36,20 +36,24 @@ document.addEventListener("visibilitychange", () => {
   }
 })
 
+const Main = props => (
+  <>
+    <Nav />
+    {props.children}
+    <Footer />
+    <Proxy />
+  </>
+)
+
 render(
   () => (
     <>
-      <Router>
-        <Nav />
-        <Routes>
-          <Route path="/" component={App} />
-          <Route path="/options" component={Options} />
-          <Route path="/contributers" component={Contributers} />
-          <Route path="/privacy" component={Privacy} />
-          <Route path="*" component={Error} />
-        </Routes>
-        <Footer />
-        <Proxy />
+      <Router root={Main}>
+        <Route path="/" component={App} />
+        <Route path="/options" component={Options} />
+        <Route path="/contributers" component={Contributers} />
+        <Route path="/privacy" component={Privacy} />
+        <Route path="*" component={Error} />
       </Router>
     </>
   ),

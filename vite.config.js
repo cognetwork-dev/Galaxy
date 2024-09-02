@@ -5,9 +5,6 @@ import solidSvg from "vite-plugin-solid-svg";
 import { ChemicalVitePlugin } from "chemicaljs";
 
 export default defineConfig({
-    server: {
-        port: 3000,
-    },
     appType: "mpa",
     build: {
         target: "esnext",
