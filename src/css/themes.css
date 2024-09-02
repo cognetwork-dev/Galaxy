@@ -3,7 +3,7 @@ body[data-theme="default"] {
     --primary: #26233a;
     --text: white;
     --text-inverse: white;
-    --font: "Roboto";
+    --font: "Inter";
 }
 
 body[data-theme="light"] {
@@ -11,7 +11,7 @@ body[data-theme="light"] {
     --primary: #26233a;
     --text: black;
     --text-inverse: white;
-    --font: "Roboto";
+    --font: "Inter";
 }
 
 body[data-theme="suit"] {
@@ -19,7 +19,7 @@ body[data-theme="suit"] {
     --primary: #ff2e4e;
     --text: white;
     --text-inverse: white;
-    --font: "Roboto";
+    --font: "Inter";
 }
 
 body[data-theme="dante"] {
@@ -27,7 +27,7 @@ body[data-theme="dante"] {
     --primary: #e4ff8b;
     --text: white;
     --text-inverse: black;
-    --font: "Roboto";
+    --font: "Inter";
 }
 
 body[data-theme="blizzard"] {
@@ -35,7 +35,7 @@ body[data-theme="blizzard"] {
     --primary: #c5c5c5;
     --text: black;
     --text-inverse: black;
-    --font: "Roboto";
+    --font: "Inter";
 }
 
 body[data-theme="metallic"] {
@@ -51,7 +51,7 @@ body[data-theme="swamp"] {
     --primary: #15fc95;
     --text: white;
     --text-inverse: black;
-    --font: "Roboto";
+    --font: "Inter";
 }
 
 body[data-theme="nord"] {
@@ -59,7 +59,7 @@ body[data-theme="nord"] {
     --primary: #3b4252;
     --text: white;
     --text-inverse: white;
-    --font: "Roboto";
+    --font: "Inter";
 }
 
 body[data-theme="connection"] {
@@ -67,7 +67,7 @@ body[data-theme="connection"] {
     --primary: #43b581;
     --text: #43b581;
     --text-inverse: #1c1b29;
-    --font: "Roboto";
+    --font: "Inter";
 }
 
 body[data-theme="dune"] {
@@ -75,7 +75,7 @@ body[data-theme="dune"] {
     --primary: #7d7259;
     --text: #282425;
     --text-inverse: #d2c59d;
-    --font: "Roboto";
+    --font: "Inter";
 }
 
 body[data-theme="vscode"] {
@@ -83,7 +83,7 @@ body[data-theme="vscode"] {
     --primary: #0078d4;
     --text: white;
     --text-inverse: white;
-    --font: "Roboto";
+    --font: "Inter";
 }
 
 body[data-theme="fracital"] {
@@ -91,7 +91,7 @@ body[data-theme="fracital"] {
     --primary: #333;
     --text: #f971e4;
     --text-inverse: #f971e4;
-    --font: "Roboto";
+    --font: "Inter";
 }
 
 body[data-theme="baja-blast"] {
@@ -99,7 +99,7 @@ body[data-theme="baja-blast"] {
     --primary: #225450;
     --text: white;
     --text-inverse: white;
-    --font: "Roboto";
+    --font: "Inter";
 }
 
 body[data-theme="hacker"] {
@@ -115,7 +115,7 @@ body[data-theme="pod"] {
     --primary: #ffb703;
     --text: white;
     --text-inverse: #161616;
-    --font: "Roboto";
+    --font: "Inter";
 }
 
 body[data-theme="echo"] {
@@ -135,7 +135,7 @@ body[data-theme="nebelung"] {
     --primary: #190f05;
     --text: #190f05;
     --text-inverse: white;
-    --font: "Roboto";
+    --font: "Inter";
 }
 
 body[data-theme="halloween"] {

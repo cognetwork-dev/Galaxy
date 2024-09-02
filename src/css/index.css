@@ -1,7 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nosifer&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nosifer&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("./themes.css");
 
 body {
@@ -32,15 +29,15 @@ body::-webkit-scrollbar-thumb {
 .nav {
     background: var(--background);
     width: 100%;
-    height: 60px;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    padding: 0 0.5rem;
+    gap: 1rem;
+    padding: 1.5rem;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -71,7 +68,7 @@ body::-webkit-scrollbar-thumb {
 .title {
     font-size: 4rem;
     text-align: center;
-    font-weight: 700;
+    font-weight: bold;
     user-select: none;
 }
 
@@ -90,7 +87,7 @@ body::-webkit-scrollbar-thumb {
     width: 30rem;
     height: 50px;
     outline: none;
-    font-family: roboto;
+    font-family: var(--font);
     font-size: large;
     border: none;
     padding: 0 1rem;
@@ -112,8 +109,7 @@ body::-webkit-scrollbar-thumb {
 .navItems {
     display: flex;
     margin-left: auto;
-    margin-right: 1rem;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 .navItem {
@@ -135,16 +131,14 @@ body::-webkit-scrollbar-thumb {
 .footer {
     background: var(--background);
     width: -webkit-fill-available;
-    height: 25px;
     position: fixed;
     bottom: 0;
     right: 0;
     left: 0;
     display: flex;
     align-items: flex-end;
-    gap: 0.5rem;
-    padding: 0.5rem;
-    padding-top: 0;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 .footerItem {
@@ -166,7 +160,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .errorTitle {
-    margin-top: calc(60px + 1rem);
+    margin-top: 6.5rem;
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
@@ -182,8 +176,8 @@ body::-webkit-scrollbar-thumb {
 .options {
     gap: 2rem;
     margin: 0 1rem;
-    margin-top: calc(60px + 1rem);
-    margin-bottom: calc(25px + 1rem);
+    margin-top: 6.5rem;
+    margin-bottom: 2rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, calc(18rem));
     justify-content: space-evenly;
@@ -243,16 +237,18 @@ body::-webkit-scrollbar-thumb {
 .contributers {
     margin: 0 auto;
     width: fit-content;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
     gap: 0.25rem;
     display: flex;
     flex-direction: column;
 }
 
 .privacy {
-    margin: 0 1rem;
-    margin-top: calc(60px + 1rem);
-    margin-bottom: 25px;
+    margin-right: 1rem;
+    margin-top: 6.5rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
 }
 
 .optionTitle {
