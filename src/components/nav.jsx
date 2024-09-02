@@ -14,21 +14,21 @@ function Nav() {
     <>
       <div class="nav">
         <A href="/" class="logo">
-            <Logo />
+          <Logo />
         </A>
         <div class="navItems">
-            <a href="https://discord.com/invite/yk33HZSZkU" class="navItem">
-                <SiDiscord fill="var(--text-inverse)" />
-            </a>
-            <a href="https://github.com/cognetwork-dev/Galaxy" class="navItem">
-                <AiOutlineGithub fill="var(--text-inverse)" />
-            </a>
-            <div onclick={gamesGo} class="navItem">
-                <IoGameController fill="var(--text-inverse)" />
-            </div>
-            <A href="/options" class="navItem">
-                <IoOptions fill="var(--text-inverse)" />
-            </A>
+          <a href="https://discord.com/invite/yk33HZSZkU" class="navItem">
+            <SiDiscord fill="var(--text-inverse)" />
+          </a>
+          <a href="https://github.com/cognetwork-dev/Galaxy" class="navItem">
+            <AiOutlineGithub fill="var(--text-inverse)" />
+          </a>
+          <div onclick={gamesGo} class="navItem">
+            <IoGameController fill="var(--text-inverse)" />
+          </div>
+          <A href="/options" class="navItem">
+            <IoOptions fill="var(--text-inverse)" />
+          </A>
         </div>
       </div>
     </>

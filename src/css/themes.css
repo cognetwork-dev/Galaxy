@@ -1,147 +1,147 @@
 body[data-theme="default"] {
-  --background: #191724;
-  --primary: #26233a;
-  --text: white;
-  --text-inverse: white;
-  --font: "Roboto";
+    --background: #191724;
+    --primary: #26233a;
+    --text: white;
+    --text-inverse: white;
+    --font: "Roboto";
 }
 
 body[data-theme="light"] {
-  --background: #bfc5cf;
-  --primary: #26233a;
-  --text: black;
-  --text-inverse: white;
-  --font: "Roboto";
+    --background: #bfc5cf;
+    --primary: #26233a;
+    --text: black;
+    --text-inverse: white;
+    --font: "Roboto";
 }
 
 body[data-theme="suit"] {
-  --background: #0c0c0c;
-  --primary: #ff2e4e;
-  --text: white;
-  --text-inverse: white;
-  --font: "Roboto";
+    --background: #0c0c0c;
+    --primary: #ff2e4e;
+    --text: white;
+    --text-inverse: white;
+    --font: "Roboto";
 }
 
 body[data-theme="dante"] {
-  --background: #131313;
-  --primary: #e4ff8b;
-  --text: white;
-  --text-inverse: black;
-  --font: "Roboto";
+    --background: #131313;
+    --primary: #e4ff8b;
+    --text: white;
+    --text-inverse: black;
+    --font: "Roboto";
 }
 
 body[data-theme="blizzard"] {
-  --background: #d8d8d8;
-  --primary: #c5c5c5;
-  --text: black;
-  --text-inverse: black;
-  --font: "Roboto";
+    --background: #d8d8d8;
+    --primary: #c5c5c5;
+    --text: black;
+    --text-inverse: black;
+    --font: "Roboto";
 }
 
 body[data-theme="metallic"] {
-  --background: #171717;
-  --primary: #004953;
-  --text: white;
-  --text-inverse: white;
-  --font: "Noto Sans";
+    --background: #171717;
+    --primary: #004953;
+    --text: white;
+    --text-inverse: white;
+    --font: "Noto Sans";
 }
 
 body[data-theme="swamp"] {
-  --background: #006072;
-  --primary: #15fc95;
-  --text: white;
-  --text-inverse: black;
-  --font: "Roboto";
+    --background: #006072;
+    --primary: #15fc95;
+    --text: white;
+    --text-inverse: black;
+    --font: "Roboto";
 }
 
 body[data-theme="nord"] {
-  --background: #242933;
-  --primary: #3b4252;
-  --text: white;
-  --text-inverse: white;
-  --font: "Roboto";
+    --background: #242933;
+    --primary: #3b4252;
+    --text: white;
+    --text-inverse: white;
+    --font: "Roboto";
 }
 
 body[data-theme="connection"] {
-  --background: #1c1b29;
-  --primary: #43b581;
-  --text: #43b581;
-  --text-inverse: #1c1b29;
-  --font: "Roboto";
+    --background: #1c1b29;
+    --primary: #43b581;
+    --text: #43b581;
+    --text-inverse: #1c1b29;
+    --font: "Roboto";
 }
 
 body[data-theme="dune"] {
-  --background: #d2c59d;
-  --primary: #7d7259;
-  --text: #282425;
-  --text-inverse: #d2c59d;
-  --font: "Roboto";
+    --background: #d2c59d;
+    --primary: #7d7259;
+    --text: #282425;
+    --text-inverse: #d2c59d;
+    --font: "Roboto";
 }
 
 body[data-theme="vscode"] {
-  --background: #1f1f1f;
-  --primary: #0078d4;
-  --text: white;
-  --text-inverse: white;
-  --font: "Roboto";
+    --background: #1f1f1f;
+    --primary: #0078d4;
+    --text: white;
+    --text-inverse: white;
+    --font: "Roboto";
 }
 
 body[data-theme="fracital"] {
-  --background: #222;
-  --primary: #333;
-  --text: #f971e4;
-  --text-inverse: #f971e4;
-  --font: "Roboto";
+    --background: #222;
+    --primary: #333;
+    --text: #f971e4;
+    --text-inverse: #f971e4;
+    --font: "Roboto";
 }
 
 body[data-theme="baja-blast"] {
-  --background: #3b8680;
-  --primary: #225450;
-  --text: white;
-  --text-inverse: white;
-  --font: "Roboto";
+    --background: #3b8680;
+    --primary: #225450;
+    --text: white;
+    --text-inverse: white;
+    --font: "Roboto";
 }
 
 body[data-theme="hacker"] {
-  --background: #090909;
-  --primary: #232323;
-  --text: #7de38d;
-  --text-inverse: #7de38d;
-  --font: "Ubuntu Mono";
+    --background: #090909;
+    --primary: #232323;
+    --text: #7de38d;
+    --text-inverse: #7de38d;
+    --font: "Ubuntu Mono";
 }
 
 body[data-theme="pod"] {
-  --background: #161616;
-  --primary: #ffb703;
-  --text: white;
-  --text-inverse: #161616;
-  --font: "Roboto";
+    --background: #161616;
+    --primary: #ffb703;
+    --text: white;
+    --text-inverse: #161616;
+    --font: "Roboto";
 }
 
 body[data-theme="echo"] {
-  --background: #1c1c1c;
-  --primary: #4caf50;
-  --text: white;
-  --text-inverse: black;
-  --font: "Noto Sans";
+    --background: #1c1c1c;
+    --primary: #4caf50;
+    --text: white;
+    --text-inverse: black;
+    --font: "Noto Sans";
 }
 
 body[data-theme="echo"] .nav {
-  box-shadow: 0 5px 200px var(--primary);
+    box-shadow: 0 5px 200px var(--primary);
 }
 
 body[data-theme="nebelung"] {
-  --background: #dabc9a;
-  --primary: #190f05;
-  --text: #190f05;
-  --text-inverse: white;
-  --font: "Roboto";
+    --background: #dabc9a;
+    --primary: #190f05;
+    --text: #190f05;
+    --text-inverse: white;
+    --font: "Roboto";
 }
 
 body[data-theme="halloween"] {
-  --background: #13171f;
-  --primary: #e48500;
-  --text: #e48500;
-  --text-inverse: black;
-  --font: "Nosifer";
+    --background: #13171f;
+    --primary: #e48500;
+    --text: #e48500;
+    --text-inverse: black;
+    --font: "Nosifer";
 }

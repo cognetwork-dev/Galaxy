@@ -1,19 +1,12 @@
-/**
- * Creates additional HTML files for react-router-dom to work correctly.
- */
 import { copyFile, mkdir } from "node:fs/promises";
 
 const buildURL = new URL("./build/", import.meta.url);
 const indexURL = new URL("index.html", buildURL);
 
-/**
- * Paths relative to buildURL
- */
 const files = [
     "options.html",
     "contributers.html",
     "privacy.html",
-    // for static file hosts
     "404.html",
 ];
 
