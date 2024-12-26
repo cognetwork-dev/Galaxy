@@ -20,7 +20,7 @@
     "@solidjs/meta": "^0.29.4",
     "@solidjs/router": "^0.14.3",
     "@thisbeyond/solid-select": "^0.15.0",
-    "chemicaljs": "^1.8.2",
+    "chemicaljs": "^2.6.4",
     "express": "^4.19.2",
     "solid-icons": "^1.1.0",
     "solid-js": "^1.8.22",
